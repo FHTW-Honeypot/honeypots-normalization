@@ -105,4 +105,4 @@ Reads `scripts-out/analyzer4_results.json` and renders the Markdown analysis rep
 ## Documentation
 
 - [`docs/project_documentation.md`](docs/project_documentation.md) — Full schema, parser details, attack classification methodology, and query examples.
-- [`docs/analysis_normalized_data.md`](docs/analysis_normalized_data.md) — Data-driven answers to supervisor questions.
+- [`docs/analysis_normalized_data.md`](docs/analysis_normalized_data.md) — Gathered Data.
