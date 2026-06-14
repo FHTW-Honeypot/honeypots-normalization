@@ -1,0 +1,19 @@
+# Exclude test folder
+.test/
+
+# Exclude database
+*.db
+
+# Exclude blob contents but keep the folder structure
+blob/cowrie/*
+blob/endlessh/*
+blob/heralding/*
+blob/nginx/*
+!blob/cowrie/.gitkeep
+!blob/endlessh/.gitkeep
+!blob/heralding/.gitkeep
+!blob/nginx/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
