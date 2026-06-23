@@ -1,14 +1,14 @@
 """
 Deep Analyzer for Honeypot Normalized Data
-Runs comprehensive queries against honeypot_normalized.db to answer
-all of Recep's questions with full data evidence and methodology.
+Runs queries against honeypot_normalized.db to answer
+interesting questions.
 """
 import sqlite3
 import json
 from collections import defaultdict
 
 DB_PATH = r"C:\honeypots-normalization\honeypot_normalized.db"
-OUT_PATH = r"C:\honeypots-normalization\docs\deep_analysis_results.json"
+OUT_PATH = r"C:\honeypots-normalization\scripts-out\analyzer_results.json"
 
 def run():
     conn = sqlite3.connect(DB_PATH)
@@ -386,24 +386,33 @@ def run():
         FROM events
         WHERE sensor_type = 'cowrie' AND event_category = 'command_execution' AND payload != ''
         GROUP BY session_id, src_ip
-        HAVING (duration_sec > 30 AND unique_cmds > 3) 
-            OR cmd_sequence LIKE '%nano%'
-            OR cmd_sequence LIKE '%vi %'
-            OR cmd_sequence LIKE '%top%'
-            OR cmd_sequence LIKE '%ping%'
-        ORDER BY duration_sec DESC
-        LIMIT 30
+        HAVING unique_cmds > 3
     """)
     flagged = []
     for r in c.fetchall():
         d = dict(r)
-        reason = []
-        if d['duration_sec'] and d['duration_sec'] > 30 and d['unique_cmds'] > 3:
-            reason.append("Timing/Interactive (Duration > 30s, Unique cmds > 3)")
-        if any(x in (d['cmd_sequence'] or "") for x in ['nano', 'vi ', 'top', 'ping']):
-            reason.append("Interactive-shell artifacts (nano/vi/top/ping)")
-        d['flag_reason'] = " + ".join(reason) if reason else "Manual interaction signals"
-        flagged.append(d)
+        seq = d['cmd_sequence'] or ""
+        cmds = seq.split(' | ')
+        avg_len = sum(len(c) for c in cmds) / len(cmds) if cmds else 0
+        max_len = max((len(c) for c in cmds), default=0)
+
+        bot_sigs = ['mdrfckr', 'lockr', 'echo "root:', '/ip cloud print', 'disable_firewall', 'awk', 'wget', 'curl', 'chmod', 'chattr', 'crontab', 'free -m', 'lscpu', '/bin/skhqwensw']
+        if any(sig in seq for sig in bot_sigs):
+            continue
+        if max_len > 100:
+            continue
+            
+        has_editor = any(c.startswith('nano ') or c.startswith('vi ') or c.startswith('vim ') for c in cmds)
+        has_typo = 'sudp' in seq or 'passwwd' in seq
+        
+        if has_typo or (has_editor and avg_len < 20):
+            reason = []
+            if has_typo: reason.append("Human Typos Detected")
+            if has_editor: reason.append("Interactive Editor Usage")
+            d['flag_reason'] = " + ".join(reason)
+            flagged.append(d)
+            
+    flagged.sort(key=lambda x: x['duration_sec'] or 0, reverse=True)
     results['q11_human_manual_sessions'] = flagged
 
     # ============================================================

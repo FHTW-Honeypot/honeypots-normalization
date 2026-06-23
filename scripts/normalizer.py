@@ -4,6 +4,7 @@ import csv
 import sqlite3
 import hashlib
 import re
+import gzip
 from pathlib import Path
 from datetime import datetime
 from iptocc import country_code
@@ -306,15 +307,20 @@ def backfill_attack_types(conn):
     conn.commit()
     print("Backfill for attack_type complete.")
 
+def open_log(filepath, mode='rt'):
+    if filepath.name.endswith('.gz'):
+        return gzip.open(filepath, mode, encoding='utf-8', errors='ignore')
+    return open(filepath, mode, encoding='utf-8', errors='ignore')
+
 def is_file_processed(filepath, agent, instance, cursor):
     """
     Clever SQL approach: read the first valid event from the file and query its event_id 
     against the database. If it exists, the file has already been imported.
     """
     try:
-        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+        with open_log(filepath) as f:
             if agent == 'heralding' and 'log_auth.csv' in filepath.name:
-                reader = csv.reader(f)
+                reader = csv.reader((x.replace('\0', '') for x in f))
                 for row in reader:
                     rec = normalize_heralding_auth(row, instance)
                     if rec:
@@ -322,7 +328,7 @@ def is_file_processed(filepath, agent, instance, cursor):
                         return cursor.fetchone() is not None
             else:
                 for line in f:
-                    line = line.strip()
+                    line = line.strip().replace('\0', '')
                     if not line: continue
                     rec = None
                     if agent == 'cowrie': rec = normalize_cowrie(line, instance, {})
@@ -342,9 +348,9 @@ def process_file(filepath, agent, instance, session_state, batch_size=20000):
     rs, er = 0, 0
     
     try:
-        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+        with open_log(filepath) as f:
             if agent == 'heralding' and 'log_auth.csv' in filepath.name:
-                reader = csv.reader(f)
+                reader = csv.reader((x.replace('\0', '') for x in f))
                 for row in reader:
                     rs += 1
                     rec = normalize_heralding_auth(row, instance)
@@ -386,9 +392,9 @@ def detect_agent_type(filepath):
         return 'cowrie'
     elif 'endlessh' in name:
         return 'endlessh'
-    elif name in ('log_auth.csv', 'log_session.csv', 'log_session.json'):
+    elif 'log_auth.csv' in name or 'log_session.csv' in name or 'log_session.json' in name:
         return 'heralding'
-    elif name == 'access.log' or (name.startswith('honeypot_') and name.endswith('.log')):
+    elif 'access.log' in name or name.startswith('honeypot_'):
         return 'nginx'
     return None
 
@@ -430,7 +436,7 @@ def run():
     batch = []
     seen_instances = set()
     for filepath in base_dir.rglob("*"):
-        if filepath.is_file() and not filepath.name.endswith('.gz'):
+        if filepath.is_file():
             agent, instance = get_agent_and_instance(filepath, base_dir)
             if not agent or not instance:
                 continue

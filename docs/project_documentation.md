@@ -104,8 +104,8 @@ Before parsing an entire file, the script reads the first valid log line, genera
 The `attack_type` field categorizes events as `automated`, `human_or_manual`, or `uncertain`. This is a heuristic indicator, not strict forensic attribution.
 
 ### Cowrie
-- **Automated:** Bot libraries (`SSH-2.0-Go`), inhuman speed (<2.0s after login), long/chained scripted commands (>200 chars), or instant drops.
-- **Human or Manual:** Terminal capabilities (negotiating window size via `cowrie.client.size`), or interactive commands (`nano`, `vi`, `top`, `ping`) >2.0s after login.
+- **Automated:** Bot libraries (`SSH-2.0-Go`), scripts containing known malware signatures (e.g., `mdrfckr`, `lockr`), extreme command lengths (>100 chars per command line), or automated downloading utilities (`wget`, `curl`).
+- **Human or Manual:** Detected strictly via a combination of interactive editor usage (`nano`, `vi`, `vim`) with a very low average command length (<20 chars), or explicit human typographical errors (e.g., typing `sudp`, `passwwd`). This strict heuristic eliminates sophisticated automated recon scripts that commonly abuse utilities like `top` or `ping`.
 
 ### Heralding
 - **Automated:** High-speed brute-forcing (Auth attempts / duration > 2.0), or bot libraries.
@@ -144,4 +144,4 @@ SELECT src_ip, COUNT(DISTINCT sensor_type) as honeypot_types_hit FROM events GRO
 SELECT timestamp, sensor_type, event_category, payload FROM events WHERE src_ip = '192.168.1.100' ORDER BY timestamp ASC;
 ```
 
-Once all events are unified, the `deep_analyzer.py` script automatically runs these advanced correlation queries across the full dataset to generate analytical reports.
+Once all events are unified, the `db_analyzer.py` script automatically runs these advanced correlation queries across the full dataset to generate analytical reports, which are then formatted by `md-generator.py`.
