@@ -29,11 +29,11 @@ honeypots-normalization/
 │
 ├── scripts/                       # Python pipeline scripts
 │   ├── normalizer.py              #   Parses all sensors → inserts into SQLite (UCES)
-│   ├── analyzer4_results.py       #   Reads analysis JSON → renders Markdown report
-│   └── analysis_normalized_data.md-generator.py  # Generates the analysis doc
+│   ├── db_analyzer.py             #   Runs cross-sensor queries → outputs JSON
+│   └── md-generator.py            #   Reads analysis JSON → renders Markdown report
 │
 ├── scripts-out/                   # Script output files
-│   └── analyzer4_results.json     # Cross-sensor analysis results (JSON)
+│   └── analyzer_results.json      # Cross-sensor analysis results (JSON)
 │
 ├── docs/                          # Project documentation
 │   ├── project_documentation.md   # Full schema, parser details, workflow
@@ -84,9 +84,15 @@ This parses all log files, performs SHA-256-based deduplication, and inserts eve
 
 ### 4. Run the analyzer
 ```bash
-python scripts/analyzer4_results.py
+python scripts/db_analyzer.py
 ```
-Reads `scripts-out/analyzer4_results.json` and renders the Markdown analysis report.
+Runs the SQL queries and generates `scripts-out/analyzer_results.json`.
+
+### 5. Generate the Markdown report
+```bash
+python scripts/md-generator.py
+```
+Reads `scripts-out/analyzer_results.json` and renders the `docs/analysis_normalized_data.md` report.
 
 ---
 
@@ -94,11 +100,11 @@ Reads `scripts-out/analyzer4_results.json` and renders the Markdown analysis rep
 
 | Honeypot | Total Events | Unique IPs |
 |---|---|---|
-| Cowrie | 12,684,265 | 26,194 |
-| Heralding | 8,684,631 | 27,319 |
-| Nginx | 37,451 | 3,886 |
-| Endlessh | 1,367 | 302 |
-| **Total** | **21,407,714** | — |
+| Cowrie | 13,003,091 | 26,668 |
+| Heralding | 9,727,548 | 30,305 |
+| Nginx | 46,318 | 4,537 |
+| Endlessh | 1,643 | 381 |
+| **Total** | **22,778,600** | — |
 
 ---
 
