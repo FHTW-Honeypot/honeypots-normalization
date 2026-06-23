@@ -7,9 +7,11 @@ Supervisor: MSc. Recep Balıbey
 
 ## Overview
 
-This project collects raw logs from four honeypot sensors — **Cowrie**, **Endlessh**, **Heralding**, and **Nginx** — and normalizes them into a single **Unified Common Event Schema (UCES)** stored in a SQLite database. The unified dataset enables cross-sensor correlation and attacker behavior analysis.
+This project collects raw logs from four honeypot sensors (**Cowrie**, **Endlessh**, **Heralding**, and **Nginx**) and normalizes them into a single Unified Common Event Schemastored in a SQLite database. The unified dataset enables cross-sensor correlation and attacker behavior analysis.
 
-The pipeline is built entirely with **Windows-native standard Python libraries** (`sqlite3`, `json`, `csv`, `re`, `pathlib`), plus the offline `iptocc` library for IP geolocation.
+For the data analysis read docs/analysis_normalized_data.md.
+
+The py-scripts are build for Windows.
 
 > **Note:** The `blob/` directory (raw log files) and `honeypot_normalized.db` (~18 GB) are **not included** in this repository due to their size. Raw logs can be downloaded from **Azure Blob Storage**.
 
@@ -35,7 +37,7 @@ honeypots-normalization/
 │
 ├── docs/                          # Project documentation
 │   ├── project_documentation.md   # Full schema, parser details, workflow
-│   └── analysis_normalized_data.md# Answers to supervisor questions (data-driven)
+│   └── analysis_normalized_data.md# Data analysis and answers to interesting questions
 │
 └── honeypot_normalized.db         # Unified SQLite database (~18 GB, NOT in repo)
 ```
@@ -103,4 +105,4 @@ Reads `scripts-out/analyzer4_results.json` and renders the Markdown analysis rep
 ## Documentation
 
 - [`docs/project_documentation.md`](docs/project_documentation.md) — Full schema, parser details, attack classification methodology, and query examples.
-- [`docs/analysis_normalized_data.md`](docs/analysis_normalized_data.md) — Data-driven answers to supervisor questions.
+- [`docs/analysis_normalized_data.md`](docs/analysis_normalized_data.md) — Gathered Data.
