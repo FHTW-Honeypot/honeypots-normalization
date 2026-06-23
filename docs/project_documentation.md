@@ -105,7 +105,7 @@ The `attack_type` field categorizes events as `automated`, `human_or_manual`, or
 
 ### Cowrie
 - **Automated:** Bot libraries (`SSH-2.0-Go`), scripts containing known malware signatures (e.g., `mdrfckr`, `lockr`), extreme command lengths (>100 chars per command line), or automated downloading utilities (`wget`, `curl`).
-- **Human or Manual:** Detected strictly via a combination of interactive editor usage (`nano`, `vi`, `vim`) with a very low average command length (<20 chars), or explicit human typographical errors (e.g., typing `sudp`, `passwwd`). This strict heuristic eliminates sophisticated automated recon scripts that commonly abuse utilities like `top` or `ping`.
+- **Human or Manual:** Detected strictly via a combination of interactive editor usage (`nano`, `vi`, `vim`) with a very low average command length (<20 chars), or explicit human typographical errors. For more info see analysis_normalized_data.md.
 
 ### Heralding
 - **Automated:** High-speed brute-forcing (Auth attempts / duration > 2.0), or bot libraries.
