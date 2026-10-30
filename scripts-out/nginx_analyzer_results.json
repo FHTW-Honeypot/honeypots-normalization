@@ -1,0 +1,2956 @@
+{
+  "q1_overview": {
+    "total_events": 46318,
+    "unique_ips": 4537,
+    "earliest": "2026-04-08T08:34:58+00:00",
+    "latest": "2026-06-21T00:04:17+00:00"
+  },
+  "q1_per_instance": [
+    {
+      "sensor_instance": "sensor-nginx-05",
+      "total_events": 25856,
+      "unique_ips": 2597,
+      "earliest": "2026-05-26T12:21:33+00:00",
+      "latest": "2026-06-21T00:04:17+00:00"
+    },
+    {
+      "sensor_instance": "sensor-nginx-04",
+      "total_events": 20462,
+      "unique_ips": 2386,
+      "earliest": "2026-04-08T08:34:58+00:00",
+      "latest": "2026-05-07T00:02:59+00:00"
+    }
+  ],
+  "q1_daily_volume": [
+    {
+      "day": "2026-04-08",
+      "requests": 349,
+      "unique_ips": 64
+    },
+    {
+      "day": "2026-04-09",
+      "requests": 587,
+      "unique_ips": 128
+    },
+    {
+      "day": "2026-04-10",
+      "requests": 653,
+      "unique_ips": 123
+    },
+    {
+      "day": "2026-04-11",
+      "requests": 874,
+      "unique_ips": 105
+    },
+    {
+      "day": "2026-04-12",
+      "requests": 523,
+      "unique_ips": 116
+    },
+    {
+      "day": "2026-04-13",
+      "requests": 541,
+      "unique_ips": 114
+    },
+    {
+      "day": "2026-04-14",
+      "requests": 603,
+      "unique_ips": 131
+    },
+    {
+      "day": "2026-04-15",
+      "requests": 380,
+      "unique_ips": 132
+    },
+    {
+      "day": "2026-04-16",
+      "requests": 769,
+      "unique_ips": 136
+    },
+    {
+      "day": "2026-04-17",
+      "requests": 753,
+      "unique_ips": 123
+    },
+    {
+      "day": "2026-04-18",
+      "requests": 369,
+      "unique_ips": 107
+    },
+    {
+      "day": "2026-04-19",
+      "requests": 444,
+      "unique_ips": 121
+    },
+    {
+      "day": "2026-04-20",
+      "requests": 638,
+      "unique_ips": 129
+    },
+    {
+      "day": "2026-04-21",
+      "requests": 819,
+      "unique_ips": 150
+    },
+    {
+      "day": "2026-04-22",
+      "requests": 1819,
+      "unique_ips": 137
+    },
+    {
+      "day": "2026-04-23",
+      "requests": 436,
+      "unique_ips": 158
+    },
+    {
+      "day": "2026-04-24",
+      "requests": 746,
+      "unique_ips": 151
+    },
+    {
+      "day": "2026-04-25",
+      "requests": 746,
+      "unique_ips": 125
+    },
+    {
+      "day": "2026-04-26",
+      "requests": 993,
+      "unique_ips": 134
+    },
+    {
+      "day": "2026-04-27",
+      "requests": 1478,
+      "unique_ips": 135
+    },
+    {
+      "day": "2026-04-28",
+      "requests": 983,
+      "unique_ips": 141
+    },
+    {
+      "day": "2026-04-29",
+      "requests": 624,
+      "unique_ips": 145
+    },
+    {
+      "day": "2026-04-30",
+      "requests": 677,
+      "unique_ips": 147
+    },
+    {
+      "day": "2026-05-01",
+      "requests": 885,
+      "unique_ips": 146
+    },
+    {
+      "day": "2026-05-02",
+      "requests": 640,
+      "unique_ips": 144
+    },
+    {
+      "day": "2026-05-03",
+      "requests": 475,
+      "unique_ips": 122
+    },
+    {
+      "day": "2026-05-04",
+      "requests": 504,
+      "unique_ips": 140
+    },
+    {
+      "day": "2026-05-05",
+      "requests": 466,
+      "unique_ips": 139
+    },
+    {
+      "day": "2026-05-06",
+      "requests": 687,
+      "unique_ips": 138
+    },
+    {
+      "day": "2026-05-07",
+      "requests": 1,
+      "unique_ips": 1
+    },
+    {
+      "day": "2026-05-26",
+      "requests": 188,
+      "unique_ips": 55
+    },
+    {
+      "day": "2026-05-27",
+      "requests": 1445,
+      "unique_ips": 110
+    },
+    {
+      "day": "2026-05-28",
+      "requests": 539,
+      "unique_ips": 141
+    },
+    {
+      "day": "2026-05-29",
+      "requests": 1990,
+      "unique_ips": 155
+    },
+    {
+      "day": "2026-05-30",
+      "requests": 1345,
+      "unique_ips": 155
+    },
+    {
+      "day": "2026-05-31",
+      "requests": 741,
+      "unique_ips": 133
+    },
+    {
+      "day": "2026-06-01",
+      "requests": 428,
+      "unique_ips": 138
+    },
+    {
+      "day": "2026-06-02",
+      "requests": 744,
+      "unique_ips": 175
+    },
+    {
+      "day": "2026-06-03",
+      "requests": 568,
+      "unique_ips": 185
+    },
+    {
+      "day": "2026-06-04",
+      "requests": 1729,
+      "unique_ips": 186
+    },
+    {
+      "day": "2026-06-05",
+      "requests": 639,
+      "unique_ips": 147
+    },
+    {
+      "day": "2026-06-06",
+      "requests": 477,
+      "unique_ips": 141
+    },
+    {
+      "day": "2026-06-07",
+      "requests": 718,
+      "unique_ips": 137
+    },
+    {
+      "day": "2026-06-08",
+      "requests": 1232,
+      "unique_ips": 140
+    },
+    {
+      "day": "2026-06-09",
+      "requests": 616,
+      "unique_ips": 188
+    },
+    {
+      "day": "2026-06-10",
+      "requests": 721,
+      "unique_ips": 149
+    },
+    {
+      "day": "2026-06-11",
+      "requests": 2867,
+      "unique_ips": 133
+    },
+    {
+      "day": "2026-06-12",
+      "requests": 1314,
+      "unique_ips": 138
+    },
+    {
+      "day": "2026-06-13",
+      "requests": 979,
+      "unique_ips": 134
+    },
+    {
+      "day": "2026-06-14",
+      "requests": 1927,
+      "unique_ips": 149
+    },
+    {
+      "day": "2026-06-15",
+      "requests": 1314,
+      "unique_ips": 140
+    },
+    {
+      "day": "2026-06-16",
+      "requests": 565,
+      "unique_ips": 152
+    },
+    {
+      "day": "2026-06-17",
+      "requests": 734,
+      "unique_ips": 162
+    },
+    {
+      "day": "2026-06-18",
+      "requests": 805,
+      "unique_ips": 132
+    },
+    {
+      "day": "2026-06-19",
+      "requests": 703,
+      "unique_ips": 156
+    },
+    {
+      "day": "2026-06-20",
+      "requests": 526,
+      "unique_ips": 145
+    },
+    {
+      "day": "2026-06-21",
+      "requests": 2,
+      "unique_ips": 2
+    }
+  ],
+  "q1_hourly_heatmap": [
+    {
+      "hour_utc": 0,
+      "requests": 2346
+    },
+    {
+      "hour_utc": 1,
+      "requests": 2304
+    },
+    {
+      "hour_utc": 2,
+      "requests": 1651
+    },
+    {
+      "hour_utc": 3,
+      "requests": 1371
+    },
+    {
+      "hour_utc": 4,
+      "requests": 1379
+    },
+    {
+      "hour_utc": 5,
+      "requests": 3314
+    },
+    {
+      "hour_utc": 6,
+      "requests": 1590
+    },
+    {
+      "hour_utc": 7,
+      "requests": 1404
+    },
+    {
+      "hour_utc": 8,
+      "requests": 1263
+    },
+    {
+      "hour_utc": 9,
+      "requests": 1173
+    },
+    {
+      "hour_utc": 10,
+      "requests": 2626
+    },
+    {
+      "hour_utc": 11,
+      "requests": 1636
+    },
+    {
+      "hour_utc": 12,
+      "requests": 4110
+    },
+    {
+      "hour_utc": 13,
+      "requests": 1895
+    },
+    {
+      "hour_utc": 14,
+      "requests": 3758
+    },
+    {
+      "hour_utc": 15,
+      "requests": 1513
+    },
+    {
+      "hour_utc": 16,
+      "requests": 1341
+    },
+    {
+      "hour_utc": 17,
+      "requests": 1752
+    },
+    {
+      "hour_utc": 18,
+      "requests": 1487
+    },
+    {
+      "hour_utc": 19,
+      "requests": 1549
+    },
+    {
+      "hour_utc": 20,
+      "requests": 1865
+    },
+    {
+      "hour_utc": 21,
+      "requests": 2109
+    },
+    {
+      "hour_utc": 22,
+      "requests": 1514
+    },
+    {
+      "hour_utc": 23,
+      "requests": 1368
+    }
+  ],
+  "q2_country_distribution": [
+    {
+      "src_country": "US",
+      "total_requests": 18294,
+      "unique_ips": 2493,
+      "pct": 39.5
+    },
+    {
+      "src_country": "DE",
+      "total_requests": 6090,
+      "unique_ips": 175,
+      "pct": 13.15
+    },
+    {
+      "src_country": "BG",
+      "total_requests": 3143,
+      "unique_ips": 56,
+      "pct": 6.79
+    },
+    {
+      "src_country": "RU",
+      "total_requests": 3100,
+      "unique_ips": 63,
+      "pct": 6.69
+    },
+    {
+      "src_country": "FR",
+      "total_requests": 1631,
+      "unique_ips": 120,
+      "pct": 3.52
+    },
+    {
+      "src_country": "CN",
+      "total_requests": 1559,
+      "unique_ips": 165,
+      "pct": 3.37
+    },
+    {
+      "src_country": "GB",
+      "total_requests": 1557,
+      "unique_ips": 388,
+      "pct": 3.36
+    },
+    {
+      "src_country": "RO",
+      "total_requests": 1530,
+      "unique_ips": 24,
+      "pct": 3.3
+    },
+    {
+      "src_country": "SG",
+      "total_requests": 1167,
+      "unique_ips": 249,
+      "pct": 2.52
+    },
+    {
+      "src_country": "NL",
+      "total_requests": 1147,
+      "unique_ips": 70,
+      "pct": 2.48
+    },
+    {
+      "src_country": "PA",
+      "total_requests": 1120,
+      "unique_ips": 17,
+      "pct": 2.42
+    },
+    {
+      "src_country": "LT",
+      "total_requests": 953,
+      "unique_ips": 9,
+      "pct": 2.06
+    },
+    {
+      "src_country": "SC",
+      "total_requests": 679,
+      "unique_ips": 53,
+      "pct": 1.47
+    },
+    {
+      "src_country": "HK",
+      "total_requests": 631,
+      "unique_ips": 62,
+      "pct": 1.36
+    },
+    {
+      "src_country": "KR",
+      "total_requests": 317,
+      "unique_ips": 124,
+      "pct": 0.68
+    },
+    {
+      "src_country": "IN",
+      "total_requests": 314,
+      "unique_ips": 28,
+      "pct": 0.68
+    },
+    {
+      "src_country": "BR",
+      "total_requests": 311,
+      "unique_ips": 22,
+      "pct": 0.67
+    },
+    {
+      "src_country": "PT",
+      "total_requests": 257,
+      "unique_ips": 65,
+      "pct": 0.55
+    },
+    {
+      "src_country": "UA",
+      "total_requests": 184,
+      "unique_ips": 15,
+      "pct": 0.4
+    },
+    {
+      "src_country": "CA",
+      "total_requests": 181,
+      "unique_ips": 12,
+      "pct": 0.39
+    }
+  ],
+  "q2_top_ip_per_country": [
+    {
+      "src_country": "DE",
+      "src_ip": "176.65.144.128",
+      "requests": 2096
+    },
+    {
+      "src_country": "BG",
+      "src_ip": "194.180.49.49",
+      "requests": 1379
+    },
+    {
+      "src_country": "FR",
+      "src_ip": "185.177.72.61",
+      "requests": 1147
+    },
+    {
+      "src_country": "RO",
+      "src_ip": "45.148.10.200",
+      "requests": 1044
+    },
+    {
+      "src_country": "LT",
+      "src_ip": "193.111.117.35",
+      "requests": 935
+    },
+    {
+      "src_country": "US",
+      "src_ip": "192.253.248.169",
+      "requests": 658
+    },
+    {
+      "src_country": "NL",
+      "src_ip": "46.151.178.13",
+      "requests": 407
+    },
+    {
+      "src_country": "RU",
+      "src_ip": "78.153.140.148",
+      "requests": 406
+    },
+    {
+      "src_country": "PA",
+      "src_ip": "179.43.168.58",
+      "requests": 378
+    },
+    {
+      "src_country": "GB",
+      "src_ip": "77.72.5.234",
+      "requests": 231
+    },
+    {
+      "src_country": "SG",
+      "src_ip": "101.47.8.187",
+      "requests": 140
+    },
+    {
+      "src_country": "CN",
+      "src_ip": "115.191.32.57",
+      "requests": 139
+    },
+    {
+      "src_country": "NO",
+      "src_ip": "185.12.59.118",
+      "requests": 135
+    },
+    {
+      "src_country": "SC",
+      "src_ip": "5.61.209.107",
+      "requests": 106
+    },
+    {
+      "src_country": "ID",
+      "src_ip": "110.35.80.116",
+      "requests": 95
+    }
+  ],
+  "q3_http_methods": [
+    {
+      "http_method": "GET",
+      "requests": 39882,
+      "unique_ips": 3910
+    },
+    {
+      "http_method": "POST",
+      "requests": 2926,
+      "unique_ips": 612
+    },
+    {
+      "http_method": "",
+      "requests": 2487,
+      "unique_ips": 1025
+    },
+    {
+      "http_method": "PROPFIND",
+      "requests": 465,
+      "unique_ips": 12
+    },
+    {
+      "http_method": "HEAD",
+      "requests": 397,
+      "unique_ips": 25
+    },
+    {
+      "http_method": "CONNECT",
+      "requests": 99,
+      "unique_ips": 33
+    },
+    {
+      "http_method": "OPTIONS",
+      "requests": 35,
+      "unique_ips": 28
+    },
+    {
+      "http_method": "SSTP_DUPLEX_POST",
+      "requests": 13,
+      "unique_ips": 13
+    },
+    {
+      "http_method": "UNKNOWN",
+      "requests": 4,
+      "unique_ips": 2
+    },
+    {
+      "http_method": "PUT",
+      "requests": 4,
+      "unique_ips": 1
+    },
+    {
+      "http_method": "YAWI",
+      "requests": 1,
+      "unique_ips": 1
+    },
+    {
+      "http_method": "XUFV",
+      "requests": 1,
+      "unique_ips": 1
+    },
+    {
+      "http_method": "WSDJ",
+      "requests": 1,
+      "unique_ips": 1
+    },
+    {
+      "http_method": "SIYY",
+      "requests": 1,
+      "unique_ips": 1
+    },
+    {
+      "http_method": "NEBQ",
+      "requests": 1,
+      "unique_ips": 1
+    },
+    {
+      "http_method": "ICKP",
+      "requests": 1,
+      "unique_ips": 1
+    }
+  ],
+  "q4_top_payloads": [
+    {
+      "payload": "GET / HTTP/1.1",
+      "total_hits": 5098,
+      "unique_ips": 2451,
+      "first_seen": "2026-04-08T08:34:58+00:00",
+      "last_seen": "2026-06-21T00:03:00+00:00"
+    },
+    {
+      "payload": "  ",
+      "total_hits": 2487,
+      "unique_ips": 1025,
+      "first_seen": "2026-04-08T11:01:20+00:00",
+      "last_seen": "2026-06-20T23:39:04+00:00"
+    },
+    {
+      "payload": "GET /.env HTTP/1.1",
+      "total_hits": 1709,
+      "unique_ips": 167,
+      "first_seen": "2026-04-08T18:22:06+00:00",
+      "last_seen": "2026-06-20T23:33:28+00:00"
+    },
+    {
+      "payload": "POST / HTTP/1.1",
+      "total_hits": 1472,
+      "unique_ips": 165,
+      "first_seen": "2026-04-08T15:13:07+00:00",
+      "last_seen": "2026-06-20T23:33:28+00:00"
+    },
+    {
+      "payload": "GET / HTTP/1.0",
+      "total_hits": 778,
+      "unique_ips": 417,
+      "first_seen": "2026-04-08T10:30:08+00:00",
+      "last_seen": "2026-06-20T23:04:33+00:00"
+    },
+    {
+      "payload": "GET /favicon.ico HTTP/1.1",
+      "total_hits": 725,
+      "unique_ips": 546,
+      "first_seen": "2026-04-08T08:34:58+00:00",
+      "last_seen": "2026-06-20T22:47:31+00:00"
+    },
+    {
+      "payload": "PROPFIND / HTTP/1.1",
+      "total_hits": 465,
+      "unique_ips": 12,
+      "first_seen": "2026-04-08T08:54:37+00:00",
+      "last_seen": "2026-06-20T23:01:51+00:00"
+    },
+    {
+      "payload": "GET /.git/config HTTP/1.1",
+      "total_hits": 431,
+      "unique_ips": 177,
+      "first_seen": "2026-04-08T18:21:36+00:00",
+      "last_seen": "2026-06-20T22:18:18+00:00"
+    },
+    {
+      "payload": "POST  HTTP/1.1",
+      "total_hits": 426,
+      "unique_ips": 232,
+      "first_seen": "2026-04-08T10:02:10+00:00",
+      "last_seen": "2026-06-21T00:04:17+00:00"
+    },
+    {
+      "payload": "GET /robots.txt HTTP/1.1",
+      "total_hits": 319,
+      "unique_ips": 220,
+      "first_seen": "2026-04-08T11:23:25+00:00",
+      "last_seen": "2026-06-20T22:47:26+00:00"
+    },
+    {
+      "payload": "GET /SDK/webLanguage HTTP/1.1",
+      "total_hits": 243,
+      "unique_ips": 13,
+      "first_seen": "2026-04-08T13:23:36+00:00",
+      "last_seen": "2026-06-20T20:53:13+00:00"
+    },
+    {
+      "payload": "GET /.git/HEAD HTTP/1.1",
+      "total_hits": 178,
+      "unique_ips": 80,
+      "first_seen": "2026-04-18T03:12:24+00:00",
+      "last_seen": "2026-06-20T22:49:26+00:00"
+    },
+    {
+      "payload": "GET /.env.production HTTP/1.1",
+      "total_hits": 172,
+      "unique_ips": 89,
+      "first_seen": "2026-04-08T18:21:32+00:00",
+      "last_seen": "2026-06-20T22:49:26+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 156,
+      "unique_ips": 129,
+      "first_seen": "2026-04-08T10:02:12+00:00",
+      "last_seen": "2026-06-20T03:39:30+00:00"
+    },
+    {
+      "payload": "GET /.env.local HTTP/1.1",
+      "total_hits": 156,
+      "unique_ips": 87,
+      "first_seen": "2026-04-08T18:21:58+00:00",
+      "last_seen": "2026-06-20T19:35:31+00:00"
+    },
+    {
+      "payload": "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1",
+      "total_hits": 147,
+      "unique_ips": 125,
+      "first_seen": "2026-04-08T10:02:11+00:00",
+      "last_seen": "2026-06-20T03:39:28+00:00"
+    },
+    {
+      "payload": "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:22+00:00",
+      "last_seen": "2026-06-20T03:39:47+00:00"
+    },
+    {
+      "payload": "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:21+00:00",
+      "last_seen": "2026-06-20T03:39:46+00:00"
+    },
+    {
+      "payload": "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:21+00:00",
+      "last_seen": "2026-06-20T03:39:44+00:00"
+    },
+    {
+      "payload": "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:21+00:00",
+      "last_seen": "2026-06-20T03:39:45+00:00"
+    },
+    {
+      "payload": "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:22+00:00",
+      "last_seen": "2026-06-20T03:39:48+00:00"
+    },
+    {
+      "payload": "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:15+00:00",
+      "last_seen": "2026-06-20T03:39:35+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:13+00:00",
+      "last_seen": "2026-06-20T03:39:32+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:13+00:00",
+      "last_seen": "2026-06-20T03:39:31+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1",
+      "total_hits": 146,
+      "unique_ips": 124,
+      "first_seen": "2026-04-08T10:02:14+00:00",
+      "last_seen": "2026-06-20T03:39:34+00:00"
+    }
+  ],
+  "q5_exploit_families": [
+    {
+      "hits": 9154,
+      "unique_ips": 178,
+      "first_seen": "2026-04-08T18:21:17+00:00",
+      "last_seen": "2026-06-20T23:33:28+00:00",
+      "family": "DotEnv_credential_leak",
+      "signatures": [
+        "/.env",
+        ".env.bak",
+        ".env.local"
+      ]
+    },
+    {
+      "hits": 5467,
+      "unique_ips": 132,
+      "first_seen": "2026-04-08T10:02:12+00:00",
+      "last_seen": "2026-06-20T03:40:03+00:00",
+      "family": "PHPUnit_remote_exec",
+      "signatures": [
+        "phpunit",
+        "eval-stdin"
+      ]
+    },
+    {
+      "hits": 1788,
+      "unique_ips": 205,
+      "first_seen": "2026-04-08T18:21:19+00:00",
+      "last_seen": "2026-06-20T22:49:26+00:00",
+      "family": "Git_repo_disclosure",
+      "signatures": [
+        "/.git/",
+        ".git/HEAD",
+        ".gitignore"
+      ]
+    },
+    {
+      "hits": 727,
+      "unique_ips": 293,
+      "first_seen": "2026-04-08T10:02:26+00:00",
+      "last_seen": "2026-06-20T18:40:53+00:00",
+      "family": "Admin_panel_hunt",
+      "signatures": [
+        "/admin",
+        "/administrator",
+        "/phpmyadmin",
+        "/pma"
+      ]
+    },
+    {
+      "hits": 597,
+      "unique_ips": 94,
+      "first_seen": "2026-04-08T13:43:24+00:00",
+      "last_seen": "2026-06-20T19:35:33+00:00",
+      "family": "Actuator_exposure",
+      "signatures": [
+        "/actuator",
+        "/health",
+        "/metrics",
+        "/jolokia"
+      ]
+    },
+    {
+      "hits": 580,
+      "unique_ips": 129,
+      "first_seen": "2026-04-08T10:02:29+00:00",
+      "last_seen": "2026-06-20T03:40:07+00:00",
+      "family": "Path_traversal",
+      "signatures": [
+        "../",
+        "..%2F",
+        "%2e%2e"
+      ]
+    },
+    {
+      "hits": 465,
+      "unique_ips": 12,
+      "first_seen": "2026-04-08T08:54:37+00:00",
+      "last_seen": "2026-06-20T23:01:51+00:00",
+      "family": "WebDAV_PROPFIND",
+      "signatures": [
+        "PROPFIND"
+      ]
+    },
+    {
+      "hits": 288,
+      "unique_ips": 123,
+      "first_seen": "2026-04-08T10:02:29+00:00",
+      "last_seen": "2026-06-20T03:40:05+00:00",
+      "family": "PHP_RFI_ThinkPHP",
+      "signatures": [
+        "thinkphp",
+        "invokefunction"
+      ]
+    },
+    {
+      "hits": 43,
+      "unique_ips": 11,
+      "first_seen": "2026-04-08T08:35:21+00:00",
+      "last_seen": "2026-06-14T13:00:49+00:00",
+      "family": "WordPress_attack",
+      "signatures": [
+        "/wp-login",
+        "/wp-admin",
+        "/xmlrpc.php",
+        "/wp-includes"
+      ]
+    },
+    {
+      "hits": 15,
+      "unique_ips": 11,
+      "first_seen": "2026-04-10T23:21:50+00:00",
+      "last_seen": "2026-06-20T11:20:47+00:00",
+      "family": "Webshell_upload_probe",
+      "signatures": [
+        "/shell",
+        "/cmd",
+        "/c99",
+        "/r57",
+        "webshell"
+      ]
+    },
+    {
+      "hits": 2,
+      "unique_ips": 1,
+      "first_seen": "2026-06-14T13:00:24+00:00",
+      "last_seen": "2026-06-14T13:00:39+00:00",
+      "family": "XMLRPC_bruteforce",
+      "signatures": [
+        "xmlrpc.php"
+      ]
+    },
+    {
+      "hits": 1,
+      "unique_ips": 1,
+      "first_seen": "2026-06-18T17:30:19+00:00",
+      "last_seen": "2026-06-18T17:30:19+00:00",
+      "family": "SSRF_metadata_probe",
+      "signatures": [
+        "169.254.169.254",
+        "metadata.internal"
+      ]
+    },
+    {
+      "hits": 0,
+      "unique_ips": 0,
+      "first_seen": null,
+      "last_seen": null,
+      "family": "Log4Shell_JNDI",
+      "signatures": [
+        "jndi:",
+        "${jndi"
+      ]
+    },
+    {
+      "hits": 0,
+      "unique_ips": 0,
+      "first_seen": null,
+      "last_seen": null,
+      "family": "Spring4Shell",
+      "signatures": [
+        "class.module.classLoader",
+        "spring.xml"
+      ]
+    },
+    {
+      "hits": 0,
+      "unique_ips": 0,
+      "first_seen": null,
+      "last_seen": null,
+      "family": "Shellshock",
+      "signatures": [
+        "() {",
+        "() { :;};"
+      ]
+    }
+  ],
+  "q5_top_family_payloads": [
+    {
+      "payload": "GET /.env HTTP/1.1",
+      "hits": 1709,
+      "unique_ips": 167
+    },
+    {
+      "payload": "GET /.env.production HTTP/1.1",
+      "hits": 172,
+      "unique_ips": 89
+    },
+    {
+      "payload": "GET /.env.local HTTP/1.1",
+      "hits": 156,
+      "unique_ips": 87
+    },
+    {
+      "payload": "GET /.env.save HTTP/1.1",
+      "hits": 136,
+      "unique_ips": 73
+    },
+    {
+      "payload": "GET /.env.backup HTTP/1.1",
+      "hits": 133,
+      "unique_ips": 73
+    },
+    {
+      "payload": "GET /.env.bak HTTP/1.1",
+      "hits": 102,
+      "unique_ips": 53
+    },
+    {
+      "payload": "GET /api/.env HTTP/1.1",
+      "hits": 97,
+      "unique_ips": 45
+    },
+    {
+      "payload": "GET /20.19.171.42/.env HTTP/1.1",
+      "hits": 88,
+      "unique_ips": 2
+    },
+    {
+      "payload": "GET /app/.env HTTP/1.1",
+      "hits": 85,
+      "unique_ips": 47
+    },
+    {
+      "payload": "GET /.env.prod HTTP/1.1",
+      "hits": 80,
+      "unique_ips": 38
+    }
+  ],
+  "q6_top_user_agents": [
+    {
+      "user_agent": "libredtail-http",
+      "requests": 6357,
+      "unique_ips": 124
+    },
+    {
+      "user_agent": "(empty)",
+      "requests": 3887,
+      "unique_ips": 1726
+    },
+    {
+      "user_agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+      "requests": 3135,
+      "unique_ips": 36
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36",
+      "requests": 2416,
+      "unique_ips": 12
+    },
+    {
+      "user_agent": "l9explore/1.2.2",
+      "requests": 2134,
+      "unique_ips": 2
+    },
+    {
+      "user_agent": "Go-http-client/1.1",
+      "requests": 2106,
+      "unique_ips": 333
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+      "requests": 1435,
+      "unique_ips": 4
+    },
+    {
+      "user_agent": "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)",
+      "requests": 1044,
+      "unique_ips": 187
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "requests": 723,
+      "unique_ips": 6
+    },
+    {
+      "user_agent": "Mozilla/5.0 zgrab/0.x",
+      "requests": 706,
+      "unique_ips": 431
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "requests": 686,
+      "unique_ips": 14
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "requests": 597,
+      "unique_ips": 136
+    },
+    {
+      "user_agent": "Mozilla/5.0 (compatible; silver.inc/2.0)",
+      "requests": 539,
+      "unique_ips": 2
+    },
+    {
+      "user_agent": "-",
+      "requests": 509,
+      "unique_ips": 9
+    },
+    {
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML",
+      "requests": 464,
+      "unique_ips": 1
+    },
+    {
+      "user_agent": "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)",
+      "requests": 421,
+      "unique_ips": 33
+    },
+    {
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      "requests": 386,
+      "unique_ips": 37
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+      "requests": 382,
+      "unique_ips": 33
+    },
+    {
+      "user_agent": "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity",
+      "requests": 363,
+      "unique_ips": 245
+    },
+    {
+      "user_agent": "visionheight.com/scan Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36",
+      "requests": 352,
+      "unique_ips": 64
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.205 Safari/537.36 Edg/131.0.2903.112",
+      "requests": 322,
+      "unique_ips": 1
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.92 Safari/537.36",
+      "requests": 322,
+      "unique_ips": 1
+    },
+    {
+      "user_agent": "Mozilla/5.0",
+      "requests": 287,
+      "unique_ips": 66
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      "requests": 276,
+      "unique_ips": 47
+    },
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46",
+      "requests": 275,
+      "unique_ips": 25
+    }
+  ],
+  "q6_ua_tool_buckets": [
+    {
+      "tool": "Unknown / browser-like",
+      "requests": 37936,
+      "unique_ips": 2553
+    },
+    {
+      "tool": "Empty / custom UA",
+      "requests": 3887,
+      "unique_ips": 1726
+    },
+    {
+      "tool": "Go HTTP client (generic bots)",
+      "requests": 2106,
+      "unique_ips": 333
+    },
+    {
+      "tool": "Censys crawler",
+      "requests": 1044,
+      "unique_ips": 187
+    },
+    {
+      "tool": "zgrab (internet-wide scanner)",
+      "requests": 706,
+      "unique_ips": 431
+    },
+    {
+      "tool": "curl",
+      "requests": 249,
+      "unique_ips": 129
+    },
+    {
+      "tool": "Python requests / urllib",
+      "requests": 215,
+      "unique_ips": 98
+    },
+    {
+      "tool": "Shodan crawler",
+      "requests": 108,
+      "unique_ips": 8
+    },
+    {
+      "tool": "Masscan",
+      "requests": 53,
+      "unique_ips": 16
+    },
+    {
+      "tool": "wget",
+      "requests": 13,
+      "unique_ips": 9
+    },
+    {
+      "tool": "Nmap scripting engine",
+      "requests": 1,
+      "unique_ips": 1
+    }
+  ],
+  "q7_persistent_scanners": [
+    {
+      "src_ip": "93.174.93.12",
+      "src_country": "NL",
+      "total_requests": 168,
+      "active_days": 55,
+      "first_seen": "2026-04-08T14:47:40+00:00",
+      "last_seen": "2026-06-20T18:12:39+00:00",
+      "span_days": 73.1
+    },
+    {
+      "src_ip": "79.124.40.174",
+      "src_country": "BG",
+      "total_requests": 269,
+      "active_days": 49,
+      "first_seen": "2026-04-08T10:57:07+00:00",
+      "last_seen": "2026-06-15T08:59:49+00:00",
+      "span_days": 67.9
+    },
+    {
+      "src_ip": "185.12.59.118",
+      "src_country": "NO",
+      "total_requests": 135,
+      "active_days": 48,
+      "first_seen": "2026-04-09T06:28:59+00:00",
+      "last_seen": "2026-06-20T16:15:28+00:00",
+      "span_days": 72.4
+    },
+    {
+      "src_ip": "185.189.182.234",
+      "src_country": "NL",
+      "total_requests": 44,
+      "active_days": 44,
+      "first_seen": "2026-04-09T14:37:46+00:00",
+      "last_seen": "2026-06-19T12:18:22+00:00",
+      "span_days": 70.9
+    },
+    {
+      "src_ip": "46.151.178.13",
+      "src_country": "NL",
+      "total_requests": 407,
+      "active_days": 42,
+      "first_seen": "2026-04-08T08:54:37+00:00",
+      "last_seen": "2026-06-20T23:01:51+00:00",
+      "span_days": 73.6
+    },
+    {
+      "src_ip": "45.148.10.67",
+      "src_country": "RO",
+      "total_requests": 309,
+      "active_days": 39,
+      "first_seen": "2026-04-18T04:46:26+00:00",
+      "last_seen": "2026-06-17T12:41:25+00:00",
+      "span_days": 60.3
+    },
+    {
+      "src_ip": "96.126.104.20",
+      "src_country": "US",
+      "total_requests": 38,
+      "active_days": 38,
+      "first_seen": "2026-04-09T11:21:44+00:00",
+      "last_seen": "2026-06-20T11:35:32+00:00",
+      "span_days": 72.0
+    },
+    {
+      "src_ip": "80.66.83.43",
+      "src_country": "RU",
+      "total_requests": 71,
+      "active_days": 34,
+      "first_seen": "2026-04-10T19:05:50+00:00",
+      "last_seen": "2026-06-20T20:32:11+00:00",
+      "span_days": 71.1
+    },
+    {
+      "src_ip": "5.61.209.107",
+      "src_country": "SC",
+      "total_requests": 106,
+      "active_days": 29,
+      "first_seen": "2026-04-08T13:23:36+00:00",
+      "last_seen": "2026-05-06T12:12:29+00:00",
+      "span_days": 28.0
+    },
+    {
+      "src_ip": "192.253.248.169",
+      "src_country": "US",
+      "total_requests": 658,
+      "active_days": 27,
+      "first_seen": "2026-04-11T12:45:58+00:00",
+      "last_seen": "2026-06-17T15:19:18+00:00",
+      "span_days": 67.1
+    },
+    {
+      "src_ip": "185.242.226.108",
+      "src_country": "US",
+      "total_requests": 55,
+      "active_days": 27,
+      "first_seen": "2026-04-08T18:13:03+00:00",
+      "last_seen": "2026-05-06T21:36:04+00:00",
+      "span_days": 28.1
+    },
+    {
+      "src_ip": "176.65.139.66",
+      "src_country": "DE",
+      "total_requests": 78,
+      "active_days": 26,
+      "first_seen": "2026-05-04T18:52:30+00:00",
+      "last_seen": "2026-06-20T19:49:16+00:00",
+      "span_days": 47.0
+    },
+    {
+      "src_ip": "66.240.205.34",
+      "src_country": "US",
+      "total_requests": 30,
+      "active_days": 26,
+      "first_seen": "2026-04-09T12:22:00+00:00",
+      "last_seen": "2026-06-19T00:09:39+00:00",
+      "span_days": 70.5
+    },
+    {
+      "src_ip": "81.168.83.103",
+      "src_country": "GB",
+      "total_requests": 100,
+      "active_days": 25,
+      "first_seen": "2026-04-08T10:24:02+00:00",
+      "last_seen": "2026-05-06T04:07:51+00:00",
+      "span_days": 27.7
+    },
+    {
+      "src_ip": "213.209.159.175",
+      "src_country": "DE",
+      "total_requests": 612,
+      "active_days": 23,
+      "first_seen": "2026-04-11T18:27:02+00:00",
+      "last_seen": "2026-06-16T05:26:23+00:00",
+      "span_days": 65.5
+    },
+    {
+      "src_ip": "77.83.39.94",
+      "src_country": "UA",
+      "total_requests": 54,
+      "active_days": 23,
+      "first_seen": "2026-04-17T13:51:11+00:00",
+      "last_seen": "2026-06-20T21:37:39+00:00",
+      "span_days": 64.3
+    },
+    {
+      "src_ip": "77.83.39.197",
+      "src_country": "UA",
+      "total_requests": 51,
+      "active_days": 23,
+      "first_seen": "2026-04-15T13:24:30+00:00",
+      "last_seen": "2026-06-17T22:28:38+00:00",
+      "span_days": 63.4
+    },
+    {
+      "src_ip": "185.242.226.102",
+      "src_country": "US",
+      "total_requests": 27,
+      "active_days": 22,
+      "first_seen": "2026-05-30T18:10:56+00:00",
+      "last_seen": "2026-06-20T14:19:00+00:00",
+      "span_days": 20.8
+    },
+    {
+      "src_ip": "172.94.9.253",
+      "src_country": "US",
+      "total_requests": 33,
+      "active_days": 21,
+      "first_seen": "2026-04-08T21:45:13+00:00",
+      "last_seen": "2026-05-06T18:35:31+00:00",
+      "span_days": 27.9
+    },
+    {
+      "src_ip": "158.178.224.239",
+      "src_country": "US",
+      "total_requests": 20,
+      "active_days": 20,
+      "first_seen": "2026-05-26T22:24:18+00:00",
+      "last_seen": "2026-06-20T22:44:14+00:00",
+      "span_days": 25.0
+    }
+  ],
+  "q7_stealthy_slow_scanners": [
+    {
+      "src_ip": "93.174.93.12",
+      "src_country": "NL",
+      "total_requests": 168,
+      "active_days": 55,
+      "avg_per_day": 3.05
+    },
+    {
+      "src_ip": "185.12.59.118",
+      "src_country": "NO",
+      "total_requests": 135,
+      "active_days": 48,
+      "avg_per_day": 2.81
+    },
+    {
+      "src_ip": "185.189.182.234",
+      "src_country": "NL",
+      "total_requests": 44,
+      "active_days": 44,
+      "avg_per_day": 1.0
+    },
+    {
+      "src_ip": "96.126.104.20",
+      "src_country": "US",
+      "total_requests": 38,
+      "active_days": 38,
+      "avg_per_day": 1.0
+    },
+    {
+      "src_ip": "80.66.83.43",
+      "src_country": "RU",
+      "total_requests": 71,
+      "active_days": 34,
+      "avg_per_day": 2.09
+    },
+    {
+      "src_ip": "5.61.209.107",
+      "src_country": "SC",
+      "total_requests": 106,
+      "active_days": 29,
+      "avg_per_day": 3.66
+    },
+    {
+      "src_ip": "185.242.226.108",
+      "src_country": "US",
+      "total_requests": 55,
+      "active_days": 27,
+      "avg_per_day": 2.04
+    },
+    {
+      "src_ip": "66.240.205.34",
+      "src_country": "US",
+      "total_requests": 30,
+      "active_days": 26,
+      "avg_per_day": 1.15
+    },
+    {
+      "src_ip": "176.65.139.66",
+      "src_country": "DE",
+      "total_requests": 78,
+      "active_days": 26,
+      "avg_per_day": 3.0
+    },
+    {
+      "src_ip": "81.168.83.103",
+      "src_country": "GB",
+      "total_requests": 100,
+      "active_days": 25,
+      "avg_per_day": 4.0
+    },
+    {
+      "src_ip": "77.83.39.94",
+      "src_country": "UA",
+      "total_requests": 54,
+      "active_days": 23,
+      "avg_per_day": 2.35
+    },
+    {
+      "src_ip": "77.83.39.197",
+      "src_country": "UA",
+      "total_requests": 51,
+      "active_days": 23,
+      "avg_per_day": 2.22
+    },
+    {
+      "src_ip": "185.242.226.102",
+      "src_country": "US",
+      "total_requests": 27,
+      "active_days": 22,
+      "avg_per_day": 1.23
+    },
+    {
+      "src_ip": "172.94.9.253",
+      "src_country": "US",
+      "total_requests": 33,
+      "active_days": 21,
+      "avg_per_day": 1.57
+    },
+    {
+      "src_ip": "158.178.224.239",
+      "src_country": "US",
+      "total_requests": 20,
+      "active_days": 20,
+      "avg_per_day": 1.0
+    }
+  ],
+  "q8_burst_attackers": [
+    {
+      "src_ip": "156.67.26.103",
+      "src_country": "DE",
+      "total_requests": 1432,
+      "first_seen": "2026-04-22T05:44:05+00:00",
+      "last_seen": "2026-04-22T05:44:10+00:00",
+      "duration_seconds": 5.0,
+      "requests_per_second": 286.4
+    },
+    {
+      "src_ip": "195.178.110.103",
+      "src_country": "BG",
+      "total_requests": 210,
+      "first_seen": "2026-05-01T12:37:09+00:00",
+      "last_seen": "2026-05-01T12:37:09+00:00",
+      "duration_seconds": 0.0,
+      "requests_per_second": 210.0
+    },
+    {
+      "src_ip": "34.19.167.188",
+      "src_country": "US",
+      "total_requests": 383,
+      "first_seen": "2026-05-30T01:07:25+00:00",
+      "last_seen": "2026-05-30T01:07:27+00:00",
+      "duration_seconds": 2.0,
+      "requests_per_second": 191.5
+    },
+    {
+      "src_ip": "35.199.20.151",
+      "src_country": "US",
+      "total_requests": 166,
+      "first_seen": "2026-06-15T13:08:53+00:00",
+      "last_seen": "2026-06-15T13:08:54+00:00",
+      "duration_seconds": 1.0,
+      "requests_per_second": 166.0
+    },
+    {
+      "src_ip": "8.230.111.17",
+      "src_country": "US",
+      "total_requests": 151,
+      "first_seen": "2026-06-04T23:10:42+00:00",
+      "last_seen": "2026-06-04T23:10:43+00:00",
+      "duration_seconds": 1.0,
+      "requests_per_second": 151.0
+    },
+    {
+      "src_ip": "34.21.70.198",
+      "src_country": "US",
+      "total_requests": 427,
+      "first_seen": "2026-06-15T12:35:39+00:00",
+      "last_seen": "2026-06-15T12:35:42+00:00",
+      "duration_seconds": 3.0,
+      "requests_per_second": 142.33
+    },
+    {
+      "src_ip": "34.129.65.121",
+      "src_country": "US",
+      "total_requests": 427,
+      "first_seen": "2026-06-14T12:50:45+00:00",
+      "last_seen": "2026-06-14T12:50:48+00:00",
+      "duration_seconds": 3.0,
+      "requests_per_second": 142.33
+    },
+    {
+      "src_ip": "34.96.198.106",
+      "src_country": "US",
+      "total_requests": 383,
+      "first_seen": "2026-05-29T00:07:39+00:00",
+      "last_seen": "2026-05-29T00:07:42+00:00",
+      "duration_seconds": 3.0,
+      "requests_per_second": 127.67
+    },
+    {
+      "src_ip": "34.155.146.71",
+      "src_country": "US",
+      "total_requests": 383,
+      "first_seen": "2026-06-04T20:05:51+00:00",
+      "last_seen": "2026-06-04T20:05:54+00:00",
+      "duration_seconds": 3.0,
+      "requests_per_second": 127.67
+    },
+    {
+      "src_ip": "208.84.100.220",
+      "src_country": "US",
+      "total_requests": 115,
+      "first_seen": "2026-06-13T12:38:26+00:00",
+      "last_seen": "2026-06-13T12:38:27+00:00",
+      "duration_seconds": 1.0,
+      "requests_per_second": 115.0
+    },
+    {
+      "src_ip": "176.65.144.128",
+      "src_country": "DE",
+      "total_requests": 2096,
+      "first_seen": "2026-06-11T14:06:27+00:00",
+      "last_seen": "2026-06-11T14:06:48+00:00",
+      "duration_seconds": 21.0,
+      "requests_per_second": 99.81
+    },
+    {
+      "src_ip": "208.84.101.75",
+      "src_country": "US",
+      "total_requests": 97,
+      "first_seen": "2026-06-07T17:12:27+00:00",
+      "last_seen": "2026-06-07T17:12:28+00:00",
+      "duration_seconds": 1.0,
+      "requests_per_second": 97.0
+    },
+    {
+      "src_ip": "34.158.54.7",
+      "src_country": "US",
+      "total_requests": 166,
+      "first_seen": "2026-06-14T12:29:26+00:00",
+      "last_seen": "2026-06-14T12:29:28+00:00",
+      "duration_seconds": 2.0,
+      "requests_per_second": 83.0
+    },
+    {
+      "src_ip": "35.241.89.85",
+      "src_country": "US",
+      "total_requests": 389,
+      "first_seen": "2026-05-30T01:45:50+00:00",
+      "last_seen": "2026-05-30T01:45:55+00:00",
+      "duration_seconds": 5.0,
+      "requests_per_second": 77.8
+    },
+    {
+      "src_ip": "34.32.122.107",
+      "src_country": "US",
+      "total_requests": 151,
+      "first_seen": "2026-05-29T08:07:21+00:00",
+      "last_seen": "2026-05-29T08:07:23+00:00",
+      "duration_seconds": 2.0,
+      "requests_per_second": 75.5
+    }
+  ],
+  "q9_broad_scanners": [
+    {
+      "src_ip": "176.65.144.128",
+      "src_country": "DE",
+      "total_requests": 2096,
+      "unique_payloads": 1643,
+      "diversity_ratio": 0.784
+    },
+    {
+      "src_ip": "156.67.26.103",
+      "src_country": "DE",
+      "total_requests": 1432,
+      "unique_payloads": 1379,
+      "diversity_ratio": 0.963
+    },
+    {
+      "src_ip": "193.111.117.35",
+      "src_country": "LT",
+      "total_requests": 935,
+      "unique_payloads": 742,
+      "diversity_ratio": 0.794
+    },
+    {
+      "src_ip": "194.180.49.49",
+      "src_country": "BG",
+      "total_requests": 1379,
+      "unique_payloads": 474,
+      "diversity_ratio": 0.344
+    },
+    {
+      "src_ip": "34.21.70.198",
+      "src_country": "US",
+      "total_requests": 427,
+      "unique_payloads": 425,
+      "diversity_ratio": 0.995
+    },
+    {
+      "src_ip": "34.129.65.121",
+      "src_country": "US",
+      "total_requests": 427,
+      "unique_payloads": 425,
+      "diversity_ratio": 0.995
+    },
+    {
+      "src_ip": "35.241.89.85",
+      "src_country": "US",
+      "total_requests": 389,
+      "unique_payloads": 382,
+      "diversity_ratio": 0.982
+    },
+    {
+      "src_ip": "34.88.228.181",
+      "src_country": "US",
+      "total_requests": 386,
+      "unique_payloads": 382,
+      "diversity_ratio": 0.99
+    },
+    {
+      "src_ip": "34.19.184.212",
+      "src_country": "US",
+      "total_requests": 387,
+      "unique_payloads": 382,
+      "diversity_ratio": 0.987
+    },
+    {
+      "src_ip": "34.176.153.40",
+      "src_country": "US",
+      "total_requests": 388,
+      "unique_payloads": 382,
+      "diversity_ratio": 0.985
+    },
+    {
+      "src_ip": "34.96.198.106",
+      "src_country": "US",
+      "total_requests": 383,
+      "unique_payloads": 381,
+      "diversity_ratio": 0.995
+    },
+    {
+      "src_ip": "34.19.167.188",
+      "src_country": "US",
+      "total_requests": 383,
+      "unique_payloads": 381,
+      "diversity_ratio": 0.995
+    },
+    {
+      "src_ip": "34.155.146.71",
+      "src_country": "US",
+      "total_requests": 383,
+      "unique_payloads": 381,
+      "diversity_ratio": 0.995
+    },
+    {
+      "src_ip": "93.123.109.165",
+      "src_country": "BG",
+      "total_requests": 700,
+      "unique_payloads": 354,
+      "diversity_ratio": 0.506
+    },
+    {
+      "src_ip": "192.253.248.169",
+      "src_country": "US",
+      "total_requests": 658,
+      "unique_payloads": 352,
+      "diversity_ratio": 0.535
+    },
+    {
+      "src_ip": "172.235.168.35",
+      "src_country": "US",
+      "total_requests": 473,
+      "unique_payloads": 297,
+      "diversity_ratio": 0.628
+    },
+    {
+      "src_ip": "213.209.159.175",
+      "src_country": "DE",
+      "total_requests": 612,
+      "unique_payloads": 230,
+      "diversity_ratio": 0.376
+    },
+    {
+      "src_ip": "195.178.110.103",
+      "src_country": "BG",
+      "total_requests": 210,
+      "unique_payloads": 210,
+      "diversity_ratio": 1.0
+    },
+    {
+      "src_ip": "51.102.248.238",
+      "src_country": "US",
+      "total_requests": 206,
+      "unique_payloads": 205,
+      "diversity_ratio": 0.995
+    },
+    {
+      "src_ip": "176.65.148.177",
+      "src_country": "DE",
+      "total_requests": 441,
+      "unique_payloads": 205,
+      "diversity_ratio": 0.465
+    }
+  ],
+  "q9_targeted_hammering": [
+    {
+      "src_ip": "46.151.178.13",
+      "src_country": "NL",
+      "total_requests": 407,
+      "unique_payloads": 1,
+      "repetition_ratio": 407.0
+    },
+    {
+      "src_ip": "45.148.10.67",
+      "src_country": "RO",
+      "total_requests": 309,
+      "unique_payloads": 1,
+      "repetition_ratio": 309.0
+    },
+    {
+      "src_ip": "78.153.140.148",
+      "src_country": "RU",
+      "total_requests": 406,
+      "unique_payloads": 2,
+      "repetition_ratio": 203.0
+    },
+    {
+      "src_ip": "78.153.140.147",
+      "src_country": "RU",
+      "total_requests": 338,
+      "unique_payloads": 2,
+      "repetition_ratio": 169.0
+    },
+    {
+      "src_ip": "78.153.140.39",
+      "src_country": "RU",
+      "total_requests": 336,
+      "unique_payloads": 2,
+      "repetition_ratio": 168.0
+    },
+    {
+      "src_ip": "78.128.112.74",
+      "src_country": "BG",
+      "total_requests": 153,
+      "unique_payloads": 1,
+      "repetition_ratio": 153.0
+    },
+    {
+      "src_ip": "78.153.140.40",
+      "src_country": "RU",
+      "total_requests": 296,
+      "unique_payloads": 2,
+      "repetition_ratio": 148.0
+    },
+    {
+      "src_ip": "5.61.209.107",
+      "src_country": "SC",
+      "total_requests": 106,
+      "unique_payloads": 1,
+      "repetition_ratio": 106.0
+    },
+    {
+      "src_ip": "78.153.140.149",
+      "src_country": "RU",
+      "total_requests": 210,
+      "unique_payloads": 2,
+      "repetition_ratio": 105.0
+    },
+    {
+      "src_ip": "78.153.140.252",
+      "src_country": "RU",
+      "total_requests": 176,
+      "unique_payloads": 2,
+      "repetition_ratio": 88.0
+    },
+    {
+      "src_ip": "93.174.93.12",
+      "src_country": "NL",
+      "total_requests": 168,
+      "unique_payloads": 2,
+      "repetition_ratio": 84.0
+    },
+    {
+      "src_ip": "176.65.139.66",
+      "src_country": "DE",
+      "total_requests": 78,
+      "unique_payloads": 1,
+      "repetition_ratio": 78.0
+    },
+    {
+      "src_ip": "80.66.83.43",
+      "src_country": "RU",
+      "total_requests": 71,
+      "unique_payloads": 1,
+      "repetition_ratio": 71.0
+    },
+    {
+      "src_ip": "185.12.59.118",
+      "src_country": "NO",
+      "total_requests": 135,
+      "unique_payloads": 2,
+      "repetition_ratio": 67.5
+    },
+    {
+      "src_ip": "78.153.140.50",
+      "src_country": "RU",
+      "total_requests": 134,
+      "unique_payloads": 2,
+      "repetition_ratio": 67.0
+    }
+  ],
+  "q10_multi_sensor_nginx_ips": [
+    {
+      "src_ip": "172.235.168.35",
+      "src_country": "US",
+      "nginx_hits": 473,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 1997
+    },
+    {
+      "src_ip": "176.32.193.16",
+      "src_country": "AM",
+      "nginx_hits": 57,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 238
+    },
+    {
+      "src_ip": "95.215.0.144",
+      "src_country": "RU",
+      "nginx_hits": 46,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 475
+    },
+    {
+      "src_ip": "92.154.95.236",
+      "src_country": "FR",
+      "nginx_hits": 28,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 173
+    },
+    {
+      "src_ip": "80.13.153.140",
+      "src_country": "FR",
+      "nginx_hits": 14,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 139
+    },
+    {
+      "src_ip": "45.91.64.7",
+      "src_country": "RU",
+      "nginx_hits": 13,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 349
+    },
+    {
+      "src_ip": "72.14.178.148",
+      "src_country": "US",
+      "nginx_hits": 11,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 48
+    },
+    {
+      "src_ip": "45.33.12.214",
+      "src_country": "US",
+      "nginx_hits": 9,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 73
+    },
+    {
+      "src_ip": "45.79.207.181",
+      "src_country": "US",
+      "nginx_hits": 9,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 67
+    },
+    {
+      "src_ip": "69.164.217.74",
+      "src_country": "US",
+      "nginx_hits": 9,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 86
+    },
+    {
+      "src_ip": "66.228.53.162",
+      "src_country": "US",
+      "nginx_hits": 8,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 43
+    },
+    {
+      "src_ip": "45.33.109.18",
+      "src_country": "US",
+      "nginx_hits": 7,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 43
+    },
+    {
+      "src_ip": "45.33.14.5",
+      "src_country": "US",
+      "nginx_hits": 7,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 71
+    },
+    {
+      "src_ip": "45.79.115.59",
+      "src_country": "US",
+      "nginx_hits": 7,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 66
+    },
+    {
+      "src_ip": "45.79.5.11",
+      "src_country": "US",
+      "nginx_hits": 7,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 66
+    },
+    {
+      "src_ip": "69.164.217.245",
+      "src_country": "US",
+      "nginx_hits": 7,
+      "total_sensors": 4,
+      "sensors": "cowrie,heralding,nginx,endlessh",
+      "total_events": 42
+    },
+    {
+      "src_ip": "92.63.197.22",
+      "src_country": "RU",
+      "nginx_hits": 7,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 150
+    },
+    {
+      "src_ip": "45.33.109.8",
+      "src_country": "US",
+      "nginx_hits": 6,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 49
+    },
+    {
+      "src_ip": "45.79.207.252",
+      "src_country": "US",
+      "nginx_hits": 6,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 117
+    },
+    {
+      "src_ip": "80.94.95.221",
+      "src_country": "RO",
+      "nginx_hits": 6,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 423
+    },
+    {
+      "src_ip": "172.104.11.51",
+      "src_country": "US",
+      "nginx_hits": 5,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 77
+    },
+    {
+      "src_ip": "172.104.210.105",
+      "src_country": "US",
+      "nginx_hits": 5,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 77
+    },
+    {
+      "src_ip": "45.33.14.197",
+      "src_country": "US",
+      "nginx_hits": 5,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 106
+    },
+    {
+      "src_ip": "45.79.115.134",
+      "src_country": "US",
+      "nginx_hits": 5,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 64
+    },
+    {
+      "src_ip": "45.79.207.129",
+      "src_country": "US",
+      "nginx_hits": 5,
+      "total_sensors": 4,
+      "sensors": "cowrie,endlessh,heralding,nginx",
+      "total_events": 65
+    }
+  ],
+  "q10_nginx_exclusive_ips": [
+    {
+      "src_ip": "176.65.144.128",
+      "src_country": "DE",
+      "nginx_requests": 2096
+    },
+    {
+      "src_ip": "156.67.26.103",
+      "src_country": "DE",
+      "nginx_requests": 1432
+    },
+    {
+      "src_ip": "93.123.109.165",
+      "src_country": "BG",
+      "nginx_requests": 700
+    },
+    {
+      "src_ip": "107.174.52.71",
+      "src_country": "US",
+      "nginx_requests": 614
+    },
+    {
+      "src_ip": "34.21.70.198",
+      "src_country": "US",
+      "nginx_requests": 427
+    },
+    {
+      "src_ip": "34.129.65.121",
+      "src_country": "US",
+      "nginx_requests": 427
+    },
+    {
+      "src_ip": "78.153.140.148",
+      "src_country": "RU",
+      "nginx_requests": 406
+    },
+    {
+      "src_ip": "35.241.89.85",
+      "src_country": "US",
+      "nginx_requests": 389
+    },
+    {
+      "src_ip": "34.176.153.40",
+      "src_country": "US",
+      "nginx_requests": 388
+    },
+    {
+      "src_ip": "34.19.184.212",
+      "src_country": "US",
+      "nginx_requests": 387
+    },
+    {
+      "src_ip": "34.88.228.181",
+      "src_country": "US",
+      "nginx_requests": 386
+    },
+    {
+      "src_ip": "34.96.198.106",
+      "src_country": "US",
+      "nginx_requests": 383
+    },
+    {
+      "src_ip": "34.19.167.188",
+      "src_country": "US",
+      "nginx_requests": 383
+    },
+    {
+      "src_ip": "34.155.146.71",
+      "src_country": "US",
+      "nginx_requests": 383
+    },
+    {
+      "src_ip": "78.153.140.147",
+      "src_country": "RU",
+      "nginx_requests": 338
+    },
+    {
+      "src_ip": "78.153.140.39",
+      "src_country": "RU",
+      "nginx_requests": 336
+    },
+    {
+      "src_ip": "78.153.140.40",
+      "src_country": "RU",
+      "nginx_requests": 296
+    },
+    {
+      "src_ip": "178.128.95.124",
+      "src_country": "US",
+      "nginx_requests": 266
+    },
+    {
+      "src_ip": "78.153.140.149",
+      "src_country": "RU",
+      "nginx_requests": 210
+    },
+    {
+      "src_ip": "78.153.140.252",
+      "src_country": "RU",
+      "nginx_requests": 176
+    }
+  ],
+  "q11_attack_types": [
+    {
+      "attack_type": "uncertain",
+      "events": 25128,
+      "unique_ips": 3650,
+      "pct": 54.25
+    },
+    {
+      "attack_type": "automated",
+      "events": 21190,
+      "unique_ips": 1415,
+      "pct": 45.75
+    }
+  ],
+  "q12_top_first_probe_payloads": [
+    {
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 177
+    },
+    {
+      "payload": "GET / HTTP/1.0",
+      "ip_count": 77
+    },
+    {
+      "payload": "POST  HTTP/1.1",
+      "ip_count": 60
+    },
+    {
+      "payload": "  ",
+      "ip_count": 44
+    },
+    {
+      "payload": "POST /GponForm/diag_Form?images/ HTTP/1.1",
+      "ip_count": 12
+    },
+    {
+      "payload": "GET /developmentserver/metadatauploader HTTP/1.1",
+      "ip_count": 11
+    },
+    {
+      "payload": "GET /.env HTTP/1.1",
+      "ip_count": 9
+    },
+    {
+      "payload": "GET /favicon.ico HTTP/1.1",
+      "ip_count": 8
+    },
+    {
+      "payload": "GET /robots.txt HTTP/1.1",
+      "ip_count": 6
+    },
+    {
+      "payload": "GET /boaform/admin/formLogin?username=ec8&psd=ec8 HTTP/1.0",
+      "ip_count": 6
+    },
+    {
+      "payload": "GET /boaform/admin/formLogin?username=admin&psd=admin HTTP/1.0",
+      "ip_count": 5
+    },
+    {
+      "payload": "GET /manager/html HTTP/1.1",
+      "ip_count": 5
+    },
+    {
+      "payload": "GET /login HTTP/1.1",
+      "ip_count": 4
+    },
+    {
+      "payload": "POST /HNAP1/ HTTP/1.0",
+      "ip_count": 4
+    },
+    {
+      "payload": "GET /boaform/admin/formLogin?username=user&psd=user HTTP/1.0",
+      "ip_count": 4
+    },
+    {
+      "payload": "GET /actuator/health HTTP/1.1",
+      "ip_count": 4
+    },
+    {
+      "payload": "GET /ReportServer HTTP/1.1",
+      "ip_count": 4
+    },
+    {
+      "payload": "GET /.git/config HTTP/1.1",
+      "ip_count": 3
+    },
+    {
+      "payload": "GET /cgi-bin/authLogin.cgi HTTP/1.1",
+      "ip_count": 3
+    },
+    {
+      "payload": "GET /.git/HEAD HTTP/1.1",
+      "ip_count": 3
+    }
+  ],
+  "q13_weekday_distribution": [
+    {
+      "weekday": "Sunday",
+      "weekday_num": 0,
+      "requests": 5823,
+      "unique_ips": 801
+    },
+    {
+      "weekday": "Monday",
+      "weekday_num": 1,
+      "requests": 6135,
+      "unique_ips": 793
+    },
+    {
+      "weekday": "Tuesday",
+      "weekday_num": 2,
+      "requests": 4984,
+      "unique_ips": 928
+    },
+    {
+      "weekday": "Wednesday",
+      "weekday_num": 3,
+      "requests": 7327,
+      "unique_ips": 1036
+    },
+    {
+      "weekday": "Thursday",
+      "weekday_num": 4,
+      "requests": 8410,
+      "unique_ips": 990
+    },
+    {
+      "weekday": "Friday",
+      "weekday_num": 5,
+      "requests": 7683,
+      "unique_ips": 969
+    },
+    {
+      "weekday": "Saturday",
+      "weekday_num": 6,
+      "requests": 5956,
+      "unique_ips": 903
+    }
+  ],
+  "q14_dst_ports": [
+    {
+      "dst_port": 80,
+      "requests": 25043,
+      "unique_ips": 2913
+    },
+    {
+      "dst_port": 443,
+      "requests": 21275,
+      "unique_ips": 2434
+    }
+  ],
+  "q15_campaign_payloads": [
+    {
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 2451,
+      "total_hits": 5098,
+      "first_seen": "2026-04-08T08:34:58+00:00",
+      "last_seen": "2026-06-21T00:03:00+00:00"
+    },
+    {
+      "payload": "  ",
+      "ip_count": 1025,
+      "total_hits": 2487,
+      "first_seen": "2026-04-08T11:01:20+00:00",
+      "last_seen": "2026-06-20T23:39:04+00:00"
+    },
+    {
+      "payload": "GET /favicon.ico HTTP/1.1",
+      "ip_count": 546,
+      "total_hits": 725,
+      "first_seen": "2026-04-08T08:34:58+00:00",
+      "last_seen": "2026-06-20T22:47:31+00:00"
+    },
+    {
+      "payload": "GET / HTTP/1.0",
+      "ip_count": 417,
+      "total_hits": 778,
+      "first_seen": "2026-04-08T10:30:08+00:00",
+      "last_seen": "2026-06-20T23:04:33+00:00"
+    },
+    {
+      "payload": "POST  HTTP/1.1",
+      "ip_count": 232,
+      "total_hits": 426,
+      "first_seen": "2026-04-08T10:02:10+00:00",
+      "last_seen": "2026-06-21T00:04:17+00:00"
+    },
+    {
+      "payload": "GET /robots.txt HTTP/1.1",
+      "ip_count": 220,
+      "total_hits": 319,
+      "first_seen": "2026-04-08T11:23:25+00:00",
+      "last_seen": "2026-06-20T22:47:26+00:00"
+    },
+    {
+      "payload": "GET /.git/config HTTP/1.1",
+      "ip_count": 177,
+      "total_hits": 431,
+      "first_seen": "2026-04-08T18:21:36+00:00",
+      "last_seen": "2026-06-20T22:18:18+00:00"
+    },
+    {
+      "payload": "GET /.env HTTP/1.1",
+      "ip_count": 167,
+      "total_hits": 1709,
+      "first_seen": "2026-04-08T18:22:06+00:00",
+      "last_seen": "2026-06-20T23:33:28+00:00"
+    },
+    {
+      "payload": "POST / HTTP/1.1",
+      "ip_count": 165,
+      "total_hits": 1472,
+      "first_seen": "2026-04-08T15:13:07+00:00",
+      "last_seen": "2026-06-20T23:33:28+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 129,
+      "total_hits": 156,
+      "first_seen": "2026-04-08T10:02:12+00:00",
+      "last_seen": "2026-06-20T03:39:30+00:00"
+    },
+    {
+      "payload": "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1",
+      "ip_count": 125,
+      "total_hits": 147,
+      "first_seen": "2026-04-08T10:02:11+00:00",
+      "last_seen": "2026-06-20T03:39:28+00:00"
+    },
+    {
+      "payload": "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:22+00:00",
+      "last_seen": "2026-06-20T03:39:47+00:00"
+    },
+    {
+      "payload": "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:21+00:00",
+      "last_seen": "2026-06-20T03:39:46+00:00"
+    },
+    {
+      "payload": "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:21+00:00",
+      "last_seen": "2026-06-20T03:39:44+00:00"
+    },
+    {
+      "payload": "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:21+00:00",
+      "last_seen": "2026-06-20T03:39:45+00:00"
+    },
+    {
+      "payload": "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:22+00:00",
+      "last_seen": "2026-06-20T03:39:48+00:00"
+    },
+    {
+      "payload": "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:15+00:00",
+      "last_seen": "2026-06-20T03:39:35+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:13+00:00",
+      "last_seen": "2026-06-20T03:39:32+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:13+00:00",
+      "last_seen": "2026-06-20T03:39:31+00:00"
+    },
+    {
+      "payload": "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1",
+      "ip_count": 124,
+      "total_hits": 146,
+      "first_seen": "2026-04-08T10:02:14+00:00",
+      "last_seen": "2026-06-20T03:39:34+00:00"
+    }
+  ],
+  "q15_daily_campaign_bursts": [
+    {
+      "day": "2026-04-23",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 98,
+      "hits": 128
+    },
+    {
+      "day": "2026-06-09",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 92,
+      "hits": 118
+    },
+    {
+      "day": "2026-04-28",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 90,
+      "hits": 114
+    },
+    {
+      "day": "2026-06-04",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 88,
+      "hits": 109
+    },
+    {
+      "day": "2026-06-02",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 87,
+      "hits": 122
+    },
+    {
+      "day": "2026-06-17",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 85,
+      "hits": 104
+    },
+    {
+      "day": "2026-06-11",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 82,
+      "hits": 145
+    },
+    {
+      "day": "2026-04-24",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 81,
+      "hits": 111
+    },
+    {
+      "day": "2026-06-14",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 78,
+      "hits": 113
+    },
+    {
+      "day": "2026-06-05",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 78,
+      "hits": 100
+    },
+    {
+      "day": "2026-06-10",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 77,
+      "hits": 110
+    },
+    {
+      "day": "2026-06-19",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 77,
+      "hits": 97
+    },
+    {
+      "day": "2026-04-14",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 75,
+      "hits": 101
+    },
+    {
+      "day": "2026-05-01",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 75,
+      "hits": 87
+    },
+    {
+      "day": "2026-06-08",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 74,
+      "hits": 111
+    },
+    {
+      "day": "2026-05-28",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 74,
+      "hits": 100
+    },
+    {
+      "day": "2026-04-21",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 74,
+      "hits": 95
+    },
+    {
+      "day": "2026-06-13",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 73,
+      "hits": 108
+    },
+    {
+      "day": "2026-05-29",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 73,
+      "hits": 103
+    },
+    {
+      "day": "2026-06-20",
+      "payload": "GET / HTTP/1.1",
+      "ip_count": 73,
+      "hits": 87
+    }
+  ],
+  "q16_http_versions": [
+    {
+      "http_version": "HTTP/1.1",
+      "requests": 42764,
+      "unique_ips": 3824
+    },
+    {
+      "http_version": "HTTP/1.0",
+      "requests": 1067,
+      "unique_ips": 501
+    }
+  ],
+  "q17_country_payload_diversity": [
+    {
+      "src_country": "DE",
+      "unique_payloads": 3128,
+      "total_requests": 6090,
+      "unique_ips": 175
+    },
+    {
+      "src_country": "US",
+      "unique_payloads": 2332,
+      "total_requests": 18294,
+      "unique_ips": 2493
+    },
+    {
+      "src_country": "BG",
+      "unique_payloads": 1020,
+      "total_requests": 3143,
+      "unique_ips": 56
+    },
+    {
+      "src_country": "LT",
+      "unique_payloads": 747,
+      "total_requests": 953,
+      "unique_ips": 9
+    },
+    {
+      "src_country": "PA",
+      "unique_payloads": 425,
+      "total_requests": 1120,
+      "unique_ips": 17
+    },
+    {
+      "src_country": "RO",
+      "unique_payloads": 244,
+      "total_requests": 1530,
+      "unique_ips": 24
+    },
+    {
+      "src_country": "GB",
+      "unique_payloads": 214,
+      "total_requests": 1557,
+      "unique_ips": 388
+    },
+    {
+      "src_country": "SG",
+      "unique_payloads": 189,
+      "total_requests": 1167,
+      "unique_ips": 249
+    },
+    {
+      "src_country": "NL",
+      "unique_payloads": 152,
+      "total_requests": 1147,
+      "unique_ips": 70
+    },
+    {
+      "src_country": "FR",
+      "unique_payloads": 132,
+      "total_requests": 1631,
+      "unique_ips": 120
+    },
+    {
+      "src_country": "IN",
+      "unique_payloads": 117,
+      "total_requests": 314,
+      "unique_ips": 28
+    },
+    {
+      "src_country": "KR",
+      "unique_payloads": 109,
+      "total_requests": 317,
+      "unique_ips": 124
+    },
+    {
+      "src_country": "CN",
+      "unique_payloads": 78,
+      "total_requests": 1559,
+      "unique_ips": 165
+    },
+    {
+      "src_country": "SC",
+      "unique_payloads": 77,
+      "total_requests": 679,
+      "unique_ips": 53
+    },
+    {
+      "src_country": "RU",
+      "unique_payloads": 73,
+      "total_requests": 3100,
+      "unique_ips": 63
+    }
+  ],
+  "q18_top5_ip_timelines": [
+    {
+      "src_ip": "176.65.144.128",
+      "daily": [
+        {
+          "day": "2026-06-11",
+          "requests": 2096
+        }
+      ]
+    },
+    {
+      "src_ip": "156.67.26.103",
+      "daily": [
+        {
+          "day": "2026-04-22",
+          "requests": 1432
+        }
+      ]
+    },
+    {
+      "src_ip": "194.180.49.49",
+      "daily": [
+        {
+          "day": "2026-04-27",
+          "requests": 869
+        },
+        {
+          "day": "2026-04-28",
+          "requests": 510
+        }
+      ]
+    },
+    {
+      "src_ip": "185.177.72.61",
+      "daily": [
+        {
+          "day": "2026-04-08",
+          "requests": 60
+        },
+        {
+          "day": "2026-04-09",
+          "requests": 122
+        },
+        {
+          "day": "2026-04-10",
+          "requests": 61
+        },
+        {
+          "day": "2026-04-11",
+          "requests": 181
+        },
+        {
+          "day": "2026-04-12",
+          "requests": 181
+        },
+        {
+          "day": "2026-04-13",
+          "requests": 181
+        },
+        {
+          "day": "2026-04-14",
+          "requests": 60
+        },
+        {
+          "day": "2026-04-16",
+          "requests": 121
+        },
+        {
+          "day": "2026-04-17",
+          "requests": 120
+        },
+        {
+          "day": "2026-04-19",
+          "requests": 60
+        }
+      ]
+    },
+    {
+      "src_ip": "45.148.10.200",
+      "daily": [
+        {
+          "day": "2026-05-29",
+          "requests": 56
+        },
+        {
+          "day": "2026-06-10",
+          "requests": 87
+        },
+        {
+          "day": "2026-06-11",
+          "requests": 142
+        },
+        {
+          "day": "2026-06-12",
+          "requests": 151
+        },
+        {
+          "day": "2026-06-15",
+          "requests": 156
+        },
+        {
+          "day": "2026-06-16",
+          "requests": 52
+        },
+        {
+          "day": "2026-06-17",
+          "requests": 53
+        },
+        {
+          "day": "2026-06-18",
+          "requests": 157
+        },
+        {
+          "day": "2026-06-19",
+          "requests": 137
+        },
+        {
+          "day": "2026-06-20",
+          "requests": 53
+        }
+      ]
+    }
+  ],
+  "q19_sensitive_file_probes": [
+    {
+      "hits": 9565,
+      "unique_ips": 188,
+      "first_seen": "2026-04-08T18:21:17+00:00",
+      "last_seen": "2026-06-20T23:33:28+00:00",
+      "category": "Environment & credentials"
+    },
+    {
+      "hits": 1830,
+      "unique_ips": 205,
+      "first_seen": "2026-04-08T18:21:19+00:00",
+      "last_seen": "2026-06-20T22:49:26+00:00",
+      "category": "Source code & VCS"
+    },
+    {
+      "hits": 1610,
+      "unique_ips": 103,
+      "first_seen": "2026-04-08T18:21:23+00:00",
+      "last_seen": "2026-06-20T22:34:56+00:00",
+      "category": "Backup & archive files"
+    },
+    {
+      "hits": 1173,
+      "unique_ips": 80,
+      "first_seen": "2026-04-09T16:58:37+00:00",
+      "last_seen": "2026-06-20T22:34:56+00:00",
+      "category": "Config files"
+    },
+    {
+      "hits": 560,
+      "unique_ips": 75,
+      "first_seen": "2026-04-11T06:51:50+00:00",
+      "last_seen": "2026-06-20T19:35:32+00:00",
+      "category": "PHP info / server diagnostics"
+    },
+    {
+      "hits": 279,
+      "unique_ips": 66,
+      "first_seen": "2026-04-11T17:01:40+00:00",
+      "last_seen": "2026-06-20T19:35:29+00:00",
+      "category": "Log files"
+    }
+  ],
+  "q20_summary": {
+    "total_unique_attackers": 4537,
+    "total_requests": 46318,
+    "unique_request_signatures": 5924,
+    "active_days": 57
+  },
+  "q20_attack_type_split": {
+    "automated": 21190,
+    "uncertain": 25128
+  }
+}

@@ -28,8 +28,8 @@ honeypots-normalization/
 │   └── nginx/                     #   JSON Lines logs (HTTP honeypot)
 │
 ├── scripts/                       # Python pipeline scripts
-│   ├── normalizer.py              #   Parses all sensors → inserts into SQLite (UCES)
-│   ├── db_analyzer.py             #   Runs cross-sensor queries → outputs JSON
+│   ├── normalizer.py              #   Parses all sensors → inserts into SQLite (UCES) & enriches session metrics
+│   ├── db_analyzer.py             #   Runs cross-sensor queries & human attacker detection → outputs JSON
 │   └── md-generator.py            #   Reads analysis JSON → renders Markdown report
 │
 ├── scripts-out/                   # Script output files
@@ -80,7 +80,7 @@ pip install iptocc
 ```bash
 python scripts/normalizer.py
 ```
-This parses all log files, performs SHA-256-based deduplication, and inserts events into `honeypot_normalized.db`. The pipeline is **incremental** — re-running it safely skips already-processed files.
+This single standalone script parses all log files, performs SHA-256-based deduplication, handles appended continuous logs, inserts events into `honeypot_normalized.db` via UPSERT, and autonomously computes and enriches behavioral session metrics (`command_count`, `unique_command_count`, `session_duration`, `time_gap_mean`, `repetition_ratio`) directly in SQLite. Re-running it safely skips already-processed historical files in seconds.
 
 ### 4. Run the analyzer
 ```bash
@@ -96,15 +96,15 @@ Reads `scripts-out/analyzer_results.json` and renders the `docs/analysis_normali
 
 ---
 
-## Dataset Summary (Jan – June 2026)
+## Dataset Summary (Jan – October 2026)
 
 | Honeypot | Total Events | Unique IPs |
 |---|---|---|
-| Cowrie | 13,003,091 | 26,668 |
-| Heralding | 9,727,548 | 30,305 |
-| Nginx | 46,318 | 4,537 |
-| Endlessh | 1,643 | 381 |
-| **Total** | **22,778,600** | — |
+| Cowrie | 17,331,809 | 36,332 |
+| Heralding | 26,486,528 | 71,034 |
+| Nginx | 322,870 | 12,932 |
+| Endlessh | 7,090 | 981 |
+| **Total** | **44,148,297** | **100,411** |
 
 ---
 

@@ -34,6 +34,32 @@ All events, regardless of source, are stored in a single `events` table with thi
 | `raw_data` | `TEXT` | nullable | First 1000 characters of the original log line |
 | `src_country` | `TEXT` | nullable | Two-letter country code of the attacker IP (added via offline iptocc library) |
 | `attack_type` | `TEXT` | `DEFAULT 'uncertain'` | Heuristic classification: `automated`, `human_or_manual`, or `uncertain` |
+| `command_count` | `INTEGER` | `DEFAULT 0` | Total commands in this event's session |
+| `unique_command_count` | `INTEGER` | `DEFAULT 0` | Distinct commands in this event's session |
+| `session_duration` | `REAL` | `DEFAULT 0.0` | Total session duration in seconds |
+| `time_gap_mean` | `REAL` | `DEFAULT 0.0` | Average time gap (seconds) between successive commands |
+| `repetition_ratio` | `REAL` | `DEFAULT 0.0` | Proportion of repeated commands: $1 - (\text{unique} / \text{total})$ |
+
+### 2.1 Session Behavioral Schema (`sessions` Table)
+
+To track session-level behavioral patterns without bloating the main `events` table (saving gigabytes of redundant data across 22.7M rows), session metrics are maintained in the dedicated `sessions` table:
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `session_id` | `TEXT PRIMARY KEY` | Session identifier matching `events.session_id` |
+| `sensor_type` | `TEXT` | Originating honeypot type (`cowrie`, `heralding`) |
+| `sensor_instance` | `TEXT` | Specific sensor ID |
+| `src_ip` | `TEXT` | Attacker source IP |
+| `src_country` | `TEXT` | Two-letter country code |
+| `start_time` | `TEXT` | ISO 8601 UTC timestamp of first event in session |
+| `end_time` | `TEXT` | ISO 8601 UTC timestamp of last event in session |
+| `session_duration` | `REAL` | Total duration of the session in seconds |
+| `command_count` | `INTEGER` | Total number of commands executed in the session |
+| `unique_command_count` | `INTEGER` | Number of distinct commands executed |
+| `time_gap_mean` | `REAL` | Average time gap (seconds) between successive commands |
+| `repetition_ratio` | `REAL` | Proportion of repeated commands: $1 - (\text{unique} / \text{total})$ |
+
+An analytical view `v_events_enriched` is automatically created to seamlessly query events with their corresponding session metrics.
 
 ---
 
@@ -104,8 +130,13 @@ Before parsing an entire file, the script reads the first valid log line, genera
 The `attack_type` field categorizes events as `automated`, `human_or_manual`, or `uncertain`. This is a heuristic indicator, not strict forensic attribution.
 
 ### Cowrie
-- **Automated:** Bot libraries (`SSH-2.0-Go`), scripts containing known malware signatures (e.g., `mdrfckr`, `lockr`), extreme command lengths (>100 chars per command line), or automated downloading utilities (`wget`, `curl`).
-- **Human or Manual:** Detected strictly via a combination of interactive editor usage (`nano`, `vi`, `vim`) with a very low average command length (<20 chars), or explicit human typographical errors. For more info see analysis_normalized_data.md.
+- **Automated:** Bot libraries (`SSH-2.0-Go`, `libssh`, `paramiko`), overt malware payloads (e.g., `mdrfckr`, `lockr`, `/bin/skhqwensw`), or extreme single command line lengths (>100 chars). Standard administration utilities (`free -m`, `lscpu`, `curl`, `wget`, `chmod`, `crontab`, `disable_firewall`) are not blacklisted.
+- **Human or Manual:** Evaluated via independent behavioral indicators:
+  1. **Interactive Editor Usage:** Explicit invocation of terminal text editors (`nano`, `vi`, `vim`).
+  2. **Human Typographical Errors:** Matching typing mistakes such as `sl` (for `ls`), `cd /ect` (for `cd /etc`), `whomi` (for `whoami`), `gerp` (for `grep`), and `sudp` (for `sudo`).
+  3. **Natural Stumbles & Quick Retries:** An invalid or mistyped command followed immediately by a corrected valid Linux command within a human reaction window ($0.4\text{s} \le \Delta t \le 8.0\text{s}$).
+  4. **Realistic Terminal Dimensions:** Terminal window resize events (`cowrie.client.size`) only qualify if both width and height are $\ge 100$ pixels (filtering out automated $80 \times 24$ terminal requests).
+  For more info see `analysis_normalized_data.md`.
 
 ### Heralding
 - **Automated:** High-speed brute-forcing (Auth attempts / duration > 2.0), or bot libraries.
