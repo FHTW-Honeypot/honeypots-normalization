@@ -99,3 +99,28 @@ python scripts/md-generator.py
   - `gerp` $\to$ `grep`
   - Dynamic single-character typo correction to valid Linux core utilities.
 - Disqualifies sub-second bursts ($< 0.4\text{s}$) as automated script dumps.
+
+
+## [InnoLab 3 - Update 3] Behavior Categories, Feature Catalog and Clustering Evaluation
+*Date: November 15, 2026*
+
+### 1. Summary
+- **Objective**: Close the open Sprint 3 items: define attacker types and behavior categories, identify command, payload and credential features, and interpret the first clustering run.
+- **Key Delivery**: Six rule-based behavior categories that cover 99.95% of the 77,984 command sessions in the sample, checked by a script that needs no database access.
+
+### 2. What Was Added
+- `docs/attacker_profiles.md`: behavior categories (what), interaction style (how), activity type per source IP (how often), and the criterion for "bot or human".
+- `docs/feature_catalog.md`: existing features and their value, findings from the sample, six recommended additions.
+- `docs/clustering_evaluation.md`: the 12 K-Means clusters named, quality checks, what ML adds, next experiment.
+- `scripts/ml_profiles.py`: applies the categories to `scripts-out/ml/session_features.csv` and compares them with the clusters. Output: `scripts-out/ml/profile_report.md`, `profile_overview.png`.
+
+### 3. Findings That Correct Earlier Statements
+- The agreement of 0.94 between clusters and rule profiles (cluster_report.md) is decided by three bot scripts. Counted per behavior family it is 0.20.
+- The cadence and archetype shares in Update 1 (72.4% burst and so on) are outdated. See section 6.3 of `docs/analysis_normalized_data.md`.
+- Of the 11 sessions flagged as human, two are our own tests and nine are one script (typo rule accepts two-letter differences).
+- `crontab -l` is tagged as persistence and `ls /var/log` as cleanup in `db_analyzer.py`. Not fixed yet, planned for Sprint 5.
+
+### 4. How to Run
+```powershell
+python scripts/ml_profiles.py     # a few seconds, reads CSV files only
+```
