@@ -1,6 +1,6 @@
 # Honeypots Normalization Pipeline
 
-**Innovation Lab 2 — FH Technikum Wien | Team 11**  
+**Innovation Lab 2 and 3, FH Technikum Wien | Team 11**  
 Supervisor: MSc. Recep Balıbey
 
 ---
@@ -9,11 +9,11 @@ Supervisor: MSc. Recep Balıbey
 
 This project collects raw logs from four honeypot sensors (**Cowrie**, **Endlessh**, **Heralding**, and **Nginx**) and normalizes them into a single Unified Common Event Schemastored in a SQLite database. The unified dataset enables cross-sensor correlation and attacker behavior analysis.
 
-For the data analysis read docs/analysis_normalized_data.md.
+For the data analysis read docs/analysis_normalized_data.md. For the InnoLab 3 results (behavior categories, features, clustering) start with docs/attacker_profiles.md.
 
 The py-scripts are build for Windows.
 
-> **Note:** The `blob/` directory (raw log files) and `honeypot_normalized.db` (~18 GB) are **not included** in this repository due to their size. Raw logs can be downloaded from **Azure Blob Storage**.
+> **Note:** The `blob/` directory (raw log files) and `honeypot_normalized.db` (about 47 GB) are **not included** in this repository due to their size. Raw logs can be downloaded from **Azure Blob Storage**.
 
 ---
 
@@ -30,16 +30,26 @@ honeypots-normalization/
 ├── scripts/                       # Python pipeline scripts
 │   ├── normalizer.py              #   Parses all sensors → inserts into SQLite (UCES) & enriches session metrics
 │   ├── db_analyzer.py             #   Runs cross-sensor queries & human attacker detection → outputs JSON
-│   └── md-generator.py            #   Reads analysis JSON → renders Markdown report
+│   ├── md-generator.py            #   Reads analysis JSON → renders Markdown report
+│   ├── ml_features.py             #   Exports one row per Cowrie command session (reads the database)
+│   ├── ml_cluster.py              #   K-Means and DBSCAN on the exported sessions, time-based split
+│   ├── ml_profiles.py             #   Rule-based behavior categories, compared with the clusters (CSV only)
+│   └── nginx/                     #   Nginx-only analysis and report generator
 │
 ├── scripts-out/                   # Script output files
-│   └── analyzer_results.json      # Cross-sensor analysis results (JSON)
+│   ├── analyzer_results.json      # Cross-sensor analysis results (JSON)
+│   ├── nginx_analyzer_results.json
+│   └── ml/                        # Session features, clusters, reports and plots
 │
 ├── docs/                          # Project documentation
 │   ├── project_documentation.md   # Full schema, parser details, workflow
-│   └── analysis_normalized_data.md# Data analysis and answers to interesting questions
+│   ├── analysis_normalized_data.md# Data analysis and answers to interesting questions
+│   ├── nginx_analysis.md          # Nginx honeypot analysis (data until June 2026)
+│   ├── attacker_profiles.md       # Behavior categories, bot or human criterion, activity type per IP
+│   ├── feature_catalog.md         # Command, payload and credential features
+│   └── clustering_evaluation.md   # What the clusters mean and how good they are
 │
-└── honeypot_normalized.db         # Unified SQLite database (~18 GB, NOT in repo)
+└── honeypot_normalized.db         # Unified SQLite database (about 47 GB, NOT in repo)
 ```
 
 ---
@@ -94,6 +104,14 @@ python scripts/md-generator.py
 ```
 Reads `scripts-out/analyzer_results.json` and renders the `docs/analysis_normalized_data.md` report.
 
+### 6. Clustering and behavior categories (InnoLab 3)
+```bash
+pip install pandas scikit-learn matplotlib
+python scripts/ml_features.py     # reads the database, writes scripts-out/ml/session_features.csv
+python scripts/ml_cluster.py      # K-Means and DBSCAN, writes cluster_report.md and plots
+python scripts/ml_profiles.py     # behavior categories, writes profile_report.md (no database needed)
+```
+
 ---
 
 ## Dataset Summary (Jan – October 2026)
@@ -112,3 +130,6 @@ Reads `scripts-out/analyzer_results.json` and renders the `docs/analysis_normali
 
 - [`docs/project_documentation.md`](docs/project_documentation.md) — Full schema, parser details, attack classification methodology, and query examples.
 - [`docs/analysis_normalized_data.md`](docs/analysis_normalized_data.md) — Gathered Data.
+- [`docs/attacker_profiles.md`](docs/attacker_profiles.md): behavior categories with definitions, rules and numbers.
+- [`docs/feature_catalog.md`](docs/feature_catalog.md): which features describe a session and which are missing.
+- [`docs/clustering_evaluation.md`](docs/clustering_evaluation.md): interpretation of the first clustering run.
